@@ -3,8 +3,8 @@ from os import path
 import os
 
 
-file_name1 = r'E:\video\CCTV16396518_1558062062_10.mp4'
-file_name2 = r'E:\video\CCTV16396518_1558062062_11.mp4'
+file_name1 = r'E:\video\20190624-154745.264'
+file_name2 = r'E:\video\CCTV)20190623-163409.264'
 
 def video2img(file_name, frame_number=60):
     name = path.basename(file_name).split('.')[0]
@@ -30,7 +30,7 @@ def video2img(file_name, frame_number=60):
         cv2.waitKey(1)
     vc.release()
 
-# video2img(file_name1)
+video2img(file_name1)
 video2img(file_name2)
 
 print('All Finished!')
